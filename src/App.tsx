@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Project from "./pages/Project";
 import Profile from "./pages/Profile";
 import Farm from "./pages/Farm";
+import CreateProject from "./pages/CreateProject";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/project" element={<Project />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/farm" element={<Farm />} />
+          <Route path="/create-project" element={<CreateProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

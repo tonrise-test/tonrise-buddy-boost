@@ -1,11 +1,13 @@
-
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import BottomNav from '@/components/BottomNav';
 import { Info } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen pb-24 bg-ton-dark">
       <div className="container max-w-lg mx-auto p-4">
@@ -77,6 +79,7 @@ const Profile = () => {
             <Button
               variant="ghost"
               className="w-full text-blue-400 hover:text-blue-500 hover:bg-blue-500/10"
+              onClick={() => navigate('/create-project')}
             >
               Create New +
             </Button>
