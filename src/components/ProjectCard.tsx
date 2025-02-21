@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Progress } from './ui/progress';
 
@@ -18,6 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   total,
   image,
 }) => {
+  const navigate = useNavigate();
   const percentage = (progress / total) * 100;
 
   return (
@@ -38,6 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           variant="secondary"
           size="sm"
           className="absolute top-4 right-4 bg-white/10 backdrop-blur-md hover:bg-white/20"
+          onClick={() => navigate('/project')}
         >
           More
         </Button>
