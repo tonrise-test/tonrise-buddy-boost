@@ -18,8 +18,7 @@ const Profile = () => {
               alt="Profile"
               className="w-24 h-24 rounded-full border-2 border-gray-700"
             />
-            <div className="absolute -top-2 left
--1/2 transform translate-x-1/2 flex gap-1">
+            <div className="absolute -top-2 left-1/2 transform translate-x-1/2 flex gap-1">
               {['🎨', '🌟', '🚀'].map((emoji, index) => (
                 <span
                   key={index}
@@ -40,12 +39,15 @@ const Profile = () => {
           <h1 className="text-2xl font-bold mb-1">Klim Azarin</h1>
           <p className="text-gray-400 mb-4">Art Director at TonRise</p>
 
-          <Button
-            variant="default"
-            className="bg-blue-500 hover:bg-blue-600 mb-8 gap-2"
-          >
-            Badges <Info size={16} />
-          </Button>
+          <div className="flex items-center gap-2 mb-8">
+            <Button
+              variant="default"
+              className="bg-blue-500 hover:bg-blue-600 gap-2"
+              onClick={() => navigate('/badges')}
+            >
+              Badges (7) <Info size={16} />
+            </Button>
+          </div>
 
           <div className="w-full space-y-4">
             <div className="glass-card p-4 rounded-xl relative overflow-hidden">
