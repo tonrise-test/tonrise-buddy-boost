@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import Farm from "./pages/Farm";
 import CreateProject from "./pages/CreateProject";
 import Badges from "./pages/Badges";
+import Friends from "./pages/Friends";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/farm" element={<Farm />} />
           <Route path="/create-project" element={<CreateProject />} />
           <Route path="/badges" element={<Badges />} />
+          <Route path="/friends" element={<Friends />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
