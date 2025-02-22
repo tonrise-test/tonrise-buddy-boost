@@ -62,7 +62,7 @@ const Index = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {projects.map((project, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-full">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-[85%] md:basis-[85%]">
                   <ProjectCard {...project} />
                 </CarouselItem>
               ))}
