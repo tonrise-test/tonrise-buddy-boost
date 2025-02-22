@@ -19,6 +19,11 @@ const Friends = () => {
     <div className="min-h-screen bg-ton-dark pb-24">
       <div className="container max-w-lg mx-auto p-4">
         <div className="flex flex-col items-center mb-8">
+          <img
+            src="/lovable-uploads/e90383a6-3144-4f25-a354-8bc3a36de3a0.png"
+            alt="Profile"
+            className="w-24 h-24 rounded-full border-2 border-gray-700 mb-6"
+          />
           <div className="relative w-24 h-24">
             <img
               src="/lovable-uploads/aacd23b1-4c32-4d1f-b506-3da068717ad3.png"
